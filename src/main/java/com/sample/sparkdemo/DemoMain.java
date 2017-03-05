@@ -13,8 +13,8 @@ public class DemoMain {
         staticFiles.location("/css"); // Static files
         
         get("/index", (req, res) -> {
-            Map<String, Object> model = new HashMap<>();
-            model.put("title","Javawakeez);
+            Map <String, Object> model = new HashMap<>();
+            model.put("title","Javawakeez");
             return new ModelAndView(model, "index.ftl"); // located in src/test/resources/spark/template/freemarker
         }, new FreeMarkerEngine());
     }
