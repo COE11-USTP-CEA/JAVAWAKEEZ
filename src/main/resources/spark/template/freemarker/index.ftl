@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>JAVAWAKEEZ</title>
-  <meta charset="utf-8">
+  <title>${title}</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet" type="text/css">
@@ -26,15 +25,12 @@
   h4 {
       font-size: 19px;
       line-height: 1.375em;
-      color: #303030;
-      font-weight: 400;
-      margin-bottom: 30px;
+      color: #30303;
   }  
   .jumbotron {
       background-position: center;
       background-size: cover;
       background-image: url("http://beonesystems.com/wp-content/uploads/2016/01/background1.jpg");
-      background-height:150px;
       color: #000;
       padding: 100px 25px;
       font-family: Aclonica;
@@ -64,7 +60,6 @@
       margin-bottom: 10px;
   }
   .carousel-control.right, .carousel-control.left {
-      background-image: none;
       color: #4692AB;
   }
   .carousel-indicators li {
@@ -72,6 +67,9 @@
   }
   .carousel-indicators li.active {
       background-color: #4692AB;
+  }
+  .col-xs-13 {
+      position: center
   }
   .item h4 {
       font-size: 19px;
@@ -179,7 +177,7 @@
   @media screen and (max-width: 768px) {
     .col-sm-4 {
       text-align: center;
-      margin: 25px 0;
+      margin: 15px 0;
     }
     .btn-lg {
         width: 100%;
@@ -199,6 +197,7 @@
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
@@ -207,10 +206,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#add">ADD</a></li>
-        <li><a href="#view">VIEW</a></li>
-        <li><a href="#edit">EDIT</a></li>
-        <li><a href="#about">ABOUT US</a></li>
+      <li><a href="/add">ADD</a></li>
+      <li><a href="/view">VIEW</a></li>
+      <li><a href="/delete">DELETE</a></li>
+      <li><a href="#about">ABOUT US</a></li>
       </ul>
     </div>
   </div>
@@ -223,7 +222,7 @@
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
-  <div class="container-fluid bg-light-green">
+  <div class="container-fluid bg-light-grey">
     <div class="row">
       <div class="col-sm-8">
         <span class="glyphicon glyphicon-globe logo slideanim"></span>
@@ -234,25 +233,25 @@
   </div>
 </div>
   
-  <h3>What our visitors say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <div id="myCarousel" class="carousel slide image-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michelle Roa</span></h4>
+       <img src="https://pilbox.themuse.com/?url=https%3A%2F%2Fassets.themuse.com%2Fuploaded%2Fattachments%2F15056.jpg%3Fv%3DNone&h=367" style="width:100%;height:25%">
       </div>
       <div class="item">
-        <h4>"One word... AMAZING!!"<br><span>John Smith</span></h4>
+      <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/09/Fotolia_52657937_Subscription_XL.jpg" style="width:100%;height:20%">
       </div>
       <div class="item">
-        <h4>"Reliable as always."<br><span>Tristan White</span></h4>
+      <img src="http://blog.meraevents.com/wp-content/uploads/2014/06/Jobs-Large.jpg" style="width:100%;height:25%">
       </div>
     </div>
 
@@ -268,7 +267,6 @@
   </div>
 </div>
 
-
 <div id="team" class="container-fluid">
   <div class="text-center">
     <h2>MEET THE TEAM</h2>
@@ -280,7 +278,10 @@
           <h2>Reyna Edralin</h2>
         </div>
         <div class="panel-body">
-          <p><strong>HEAD</strong></p>
+          <p><strong>Project Manager</strong></p>
+          <div class="image">
+          <img src="https://avatars3.githubusercontent.com/u/24227969?v=3&u=a64f4f43b3d8ba16ec3f0652506dd7fdd3ea6c93&s=400" style="width:50%">
+          </div>
         </div>
       </div>      
     </div>     
@@ -289,25 +290,59 @@
         <div class="panel-heading">
           <h2>Jade Gevero</h2>
         </div>
-        <div class="panel-body">
-          <p><strong>DESIGN AND MARKETING</strong></p>
-        </div>
-      </div>      
-    </div>       
+          <div class="panel-body">
+            <p><strong>Design Specialist</strong></p>
+            <div class="image">
+          <img src="https://avatars3.githubusercontent.com/u/24471582?v=3&s=400" style="width:50%">
+          </div>
+        </div>      
+      </div>
+    </div>
+
     <div class="col-sm-4 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
           <h2>Junric Esta&#241ol</h2>
         </div>
         <div class="panel-body">
-          <p><strong>WEB DEVELOPMENT</strong></p>
+          <p><strong>Web Developer</strong></p>
+          <div class="image">
+          <img src="https://avatars0.githubusercontent.com/u/24227107?v=3&s=400" style="width:50%">
+          </div>
+        </div>
+      </div>      
+    </div> 
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h2>Nikka Delgado</h2>
+        </div>
+        <div class="panel-body">
+          <p><strong>Content Strategist</strong></p>
+          <div class="image">
+          <img src="https://avatars0.githubusercontent.com/u/24242436?v=3&s=400" style="width:50%">
+          </div>
+        </div>
+      </div>      
+    </div>   
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h2>Xyrah Magallanes</h2>
+        </div>
+        <div class="panel-body">
+          <p><strong>Framework Specialist</strong></p>
+          <div class="image">
+          <img src="https://avatars1.githubusercontent.com/u/24241302?v=3&s=400" style="width:50%">
+          </div>
         </div>
       </div>      
     </div>    
+    </div>  
 
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
+  <p><h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
