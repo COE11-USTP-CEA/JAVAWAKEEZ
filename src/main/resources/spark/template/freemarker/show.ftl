@@ -18,25 +18,19 @@
 <div class="btn-group" role="group" aria-label="...">
   
   	<button type="button" class="btn btn-default">
-  		<a href="/">
-  			Back to Homepage
-  		</a>
+  		<a href="/myPage">HOME</a>
   	</button>
 </div>
 
 <div class="btn-group" role="group" aria-label="...">
   
     <button type="button" class="btn btn-default">
-      <a href="/list">
-        View items list
-      </a>
+      <a href="/list">View items list</a>
     </button>
 </div>
 
-
-  </div>
+</div>
   <div class="col-md-4"></div>
-
 </div>
 
 </body>

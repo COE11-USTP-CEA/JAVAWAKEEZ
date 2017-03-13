@@ -10,5 +10,7 @@
 <p>Code: ${founditem.code}</p>
 <p>Name: ${founditem.name}</p>
 
+<a href="/">HOME</a>
+
 </body>
 </html>

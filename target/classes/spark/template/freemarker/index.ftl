@@ -202,14 +202,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">HOME</a>
+      <a class="navbar-brand" href="#myPage">JAVAWAKEEZ</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-      <a href="/add">ADD</a>
-      <a href="/view">VIEW</a>
-      <a href="/delete">DELETE</a>
-      <a href="#about">ABOUT US</a>
+      <li><a href="/index">HOME</a></li>
+      <li><a href="/add">ADD</a></li>
+      <li><a href="/view">VIEW</a></li>
+      <li><a href="/delete">DELETE</a></li>      
+      <li><a href="/about">ABOUT US</a></li>
+      </ul>
     </div>
   </div>
 </nav>

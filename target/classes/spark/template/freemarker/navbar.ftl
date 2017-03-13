@@ -13,26 +13,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active">
-          <a href="/add">ADD
-            <span class="sr-only">(current)</span>
-            </a>
-        </li>
-        <li class="active">
-          <a href="/view">VIEW
-          <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="active">
-          <a href="/edit">EDIT
-          <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="active">
-        <a href="#about">ABOUT US
-        <span class="sr-only">(current)</span>
-        </a>
-      </li>
+      <li><a href="/add">ADD</a></li>
+      <li><a href="/view">VIEW</a></li>
+      <li><a href="/delete">DELETE</a></li>
+      <li><a href="#about">ABOUT US</a></li>
       </ul>
     </div>
   </div>
