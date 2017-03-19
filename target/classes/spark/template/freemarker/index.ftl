@@ -206,7 +206,6 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="/index">HOME</a></li>
       <li><a href="/add">ADD</a></li>
       <li><a href="/view">VIEW</a></li>
       <li><a href="/delete">DELETE</a></li>      
