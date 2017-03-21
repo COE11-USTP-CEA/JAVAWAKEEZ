@@ -4,9 +4,6 @@ A job board is either a physical or electronic location on which job opportuniti
 
 This webpage allows the employee to search for jobs and the employers to post job hirings. At the same time employers can add and delete jobs.
 
-team members w/ email
-
-detailed instructions on how to ccompile and run
 
 
  
