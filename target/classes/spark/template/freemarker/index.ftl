@@ -2,194 +2,14 @@
 <html lang="en">
 <head>
   <title>${title}</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      font: 400 15px Lato, sans-serif;
-      line-height: 1.5;
-      color: #818181;
-  }
-  h2 {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
-  }
-  h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      color: #30303;
-  }  
-  .jumbotron {
-      background-position: center;
-      background-size: cover;
-      background-image: url("http://beonesystems.com/wp-content/uploads/2016/01/background1.jpg");
-      color: #000;
-      padding: 100px 25px;
-      font-family: Aclonica;
-  }
-  p.italic {
-    font-style: italic;
-  }
-  .container-fluid {
-      padding: 60px 50px;
-      font-family:Georgia, serif;
-  }
-  .bg-grey {
-      background-color: #f6f6f6;
-  }
-  .logo {
-      color: #4692AB;
-      font-size: 200px;
-  }
-  .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-  }
-  .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-      color: #4692AB;
-  }
-  .carousel-indicators li {
-      border-color: #4692AB;
-  }
-  .carousel-indicators li.active {
-      background-color: #4692AB;
-  }
-  .col-xs-13 {
-      position: center
-  }
-  .item h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      font-weight: 400;
-      font-style: italic;
-      margin: 70px 0;
-  }
-  .item span {
-      font-style: normal;
-  }
-  .panel {
-      border: 1px solid #4692AB; 
-      border-radius:0 !important;
-      transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-      border: 1px solid #4692AB;
-      background-color: #fff !important;
-      color: #4692AB;
-  }
-  .panel-heading {
-      color: #fff !important;
-      background-color: # !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-      background-color: white !important;
-  }
-  .panel-footer h3 {
-      font-size: 32px;
-  }
-  .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-  }
-  .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #4692AB;
-      color: #fff;
-  }
-  .navbar {
-      margin-bottom: 0;
-      background-color: #4692AB;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #4692AB !important;
-      background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
-  }
-  footer .glyphicon {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #4692AB;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 2s;
-      -webkit-animation-duration: 2s;
-      visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 15px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
-  }
-  </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -197,76 +17,79 @@
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>                    
       </button>
       <a class="navbar-brand" href="#myPage">JAVAWAKEEZ</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="/add">ADD</a></li>
-      <li><a href="/view">VIEW</a></li>
-      <li><a href="/delete">DELETE</a></li>      
-      <li><a href="/about">ABOUT US</a></li>
+        <li><a href="/add">ADD</a></li>
+        <li><a href="/view">VIEW</a></li>
+        <li><a href="/edit">EDIT</a></li>
+        <li><a href="/about">ABOUT US</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>CARREER BUILDERS</h1> 
-  <p class="italic">Opportunities waiting ahead...</p> 
+    <h1>CARREER BUILDERS</h1> 
+    <p class="italic">Opportunities waiting ahead...</p> 
 </div>
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid">
-  <div class="container-fluid bg-light-grey">
-    <div class="row">
-      <div class="col-sm-8">
-        <span class="glyphicon glyphicon-globe logo slideanim"></span>
-      </div>
-        <h2>What do we do?</h2><br>
-        <h4>It's a beautiful thing when carreer and passion comes together.<br>Carrier Builders offers the most convenient way to look for a job.</h4>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Company Page</h2><br>
+      <h4>This webpage allows the employee to search for jobs and the employers to post job hirings. At the same time employers can add and delete jobs.</h4><br>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
     </div>
   </div>
 </div>
-  
-  <div id="myCarousel" class="carousel slide image-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-       <img src="https://pilbox.themuse.com/?url=https%3A%2F%2Fassets.themuse.com%2Fuploaded%2Fattachments%2F15056.jpg%3Fv%3DNone&h=367" style="width:100%;height:25%">
-      </div>
-      <div class="item">
-      <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2013/09/Fotolia_52657937_Subscription_XL.jpg" style="width:100%;height:20%">
-      </div>
-      <div class="item">
-      <img src="http://blog.meraevents.com/wp-content/uploads/2014/06/Jobs-Large.jpg" style="width:100%;height:25%">
-      </div>
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    <div class="col-sm-8">
+      <h2>What do we do?</h2><br>
+      <h5>It's a beautiful thing when carreer and passion comes together.<br><br><strong>Carrier Builders</strong> offers the most convenient way to look for a job.</h5>
+    </div>
   </div>
 </div>
 
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-power logo-small"></span>
+      <h4>POWER</h4>
+      <p>Faster Employment</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>JOB DONE</h4>
+      <p>Reliable Jobs</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
+      <h4 style="color:#303030;">SALARY</h4>
+      <p>Fixed Compesation</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Team Section) -->
 <div id="team" class="container-fluid">
   <div class="text-center">
     <h2>MEET THE TEAM</h2>
@@ -280,7 +103,7 @@
         <div class="panel-body">
           <p><strong>Project Manager</strong></p>
           <div class="image">
-          <img src="https://avatars3.githubusercontent.com/u/24227969?v=3&u=a64f4f43b3d8ba16ec3f0652506dd7fdd3ea6c93&s=400" style="width:50%">
+          <img src="reyna.jpg" style="width:50%">
           </div>
         </div>
       </div>      
@@ -293,7 +116,7 @@
           <div class="panel-body">
             <p><strong>Design Specialist</strong></p>
             <div class="image">
-          <img src="https://avatars3.githubusercontent.com/u/24471582?v=3&s=400" style="width:50%">
+          <img src="jade.jpg" style="width:50%">
           </div>
         </div>      
       </div>
@@ -307,7 +130,7 @@
         <div class="panel-body">
           <p><strong>Web Developer</strong></p>
           <div class="image">
-          <img src="https://avatars0.githubusercontent.com/u/24227107?v=3&s=400" style="width:50%">
+          <img src="jun.jpg" style="width:50%">
           </div>
         </div>
       </div>      
@@ -320,7 +143,7 @@
         <div class="panel-body">
           <p><strong>Content Strategist</strong></p>
           <div class="image">
-          <img src="https://avatars0.githubusercontent.com/u/24242436?v=3&s=400" style="width:50%">
+          <img src="nikka.jpg" style="width:50%">
           </div>
         </div>
       </div>      
@@ -333,7 +156,7 @@
         <div class="panel-body">
           <p><strong>Framework Specialist</strong></p>
           <div class="image">
-          <img src="https://avatars1.githubusercontent.com/u/24241302?v=3&s=400" style="width:50%">
+          <img src="xyrah.jpg" style="width:50%">
           </div>
         </div>
       </div>      
@@ -368,13 +191,6 @@
     </div>
   </div>
 </div>
-
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>All rights reserved <a href="https://github.com/COE11-USTP-CEA/JAVAWAKEEZ" title="Visit github">JAVAWAKEEZ</a></p>
-</footer>
 
 <script>
 $(document).ready(function(){
