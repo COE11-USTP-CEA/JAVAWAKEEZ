@@ -34,61 +34,6 @@
     </div>
   </div>
 </nav>
-
-<div class="jumbotron text-center">
-    <img src="careerbuilderscover.jpg" alt="cover" style="width:100%;height:500px;">
-    <h1>CARREER BUILDERS</h1> 
-    <p class="italic">Opportunities waiting ahead...</p> </div>
-</div>
-
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>Looking for a Job?</h2><br>
-      <h6>Career Builders allows the employee to search for jobs and the employers to post job hirings. At the same time employers can add and delete jobs.</h6><br>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>What do we do?</h2><br>
-      <h6>It's a beautiful thing when carreer and passion comes together.<br><br><strong>Carrier Builders</strong> offers the most convenient way to look for a job.</h6>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-power logo-small"></span>
-      <h4>POWER</h4>
-      <p>Faster Employment</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Reliable Jobs</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
-      <h4 style="color:#303030;">SALARY</h4>
-      <p>Fixed Compesation</p>
-    </div>
-  </div>
-</div>
-
 <!-- Container (Team Section) -->
 <div id="team" class="container-fluid">
   <div class="text-center">
@@ -161,36 +106,10 @@
         </div>
       </div>      
     </div>    
-    </div>  
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <p><h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Cagayan de Oro City, Philippines</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +63 9999999999</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> javawakeez@github.com</p>
     </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
+    <div>
+    <h4></h4><br>
     </div>
-  </div>
-</div>
 
 <script>
 $(document).ready(function(){
@@ -228,6 +147,5 @@ $(document).ready(function(){
   });
 })
 </script>
-
 </body>
 </html>

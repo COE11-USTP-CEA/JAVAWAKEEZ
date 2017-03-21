@@ -34,36 +34,12 @@
     </div>
   </div>
 </nav>
-
-<div class="container">
-  <h2>Add Contact Form</h2>
-  <form method="post" action="/add">
-      <div class="form-group">
-      <label for="text">Company name:</label>
-      <input type="text" class="form-control" id="text" required="required" placeholder="eg. mycompanyname" name="companyname">
-    </div>
-    <div class="form-group">
-      <label for="text">Company Address:</label>
-      <input type="text" class="form-control" id="text" required="required" placeholder="Address line, City, Province" name="companyaddress">
-    </div>
-    <div class="form-group">
-      <label for="text">Contact Number:</label>
-      <input type="text" class="form-control" id="text" required="required" placeholder="Landline/Mobile" name="contactnumber">
-    </div>
-    <div class="form-group">
-      <label for="email">E-mail:</label>
-      <input type="email" class="form-control" id="email" required="required" placeholder="eg. myemail@example.com" name="email">
-    </div>
-    <div class="form-group">
-      <label for="job">Job List:</label>
-      <input type="job" class="form-control" id="job" required="required" placeholder="Engineer" name="joblist">
-    </div>
-    <div class="form-group">
-      <label for="req">Job Requirement:</label>
-      <input type="req" class="form-control" id="req" required="required" placeholder="Qualifications" name="jobreq">
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
+<div style="margin-top: 5em ">
+<h4>Company Name :${companyname}</h4>
+<h4>Company Address :${companyaddress}</h4>
+<h4>Contact Number :${contactnumber}</h4>
+<h4>E-mail :${email}</h4>
+<h4>Job List :${joblist}</h4>
 </div>
 </body>
 </html>

@@ -8,7 +8,7 @@ import spark.template.freemarker.FreeMarkerEngine;
 import static spark.Spark.*;
 
 public class DemoMain {
-    public static String companyname ="" , companyaddress ="", contactnumber="", email ="", joblist="";
+    public static String companyname ="" , companyaddress ="", contactnumber="", email ="", joblist="", jobreq ="";
 
 
     public static void main(String[] args) {
@@ -35,6 +35,7 @@ public class DemoMain {
             contactnumber = req.queryParams("contactnumber");
             email = req.queryParams("email");
             joblist = req.queryParams("joblist");
+            jobreq = req.queryParams("jobreq");
 
             model.put("title", "ADD JOB");
             model.put("companyname", companyname);
@@ -42,6 +43,7 @@ public class DemoMain {
             model.put("contactnumber", contactnumber);
             model.put("email", email);
             model.put("joblist", joblist);
+            model.put("jobreq", jobreq);
             
 
             return new ModelAndView(model, "view.ftl"); // located in src/main/resources/spark/template/freemarker
@@ -49,15 +51,23 @@ public class DemoMain {
     get("/view", (req, res) -> {
             Map<String, Object> model = new HashMap<>();
 
-            model.put("title", "ADD JOB");
+            model.put("title", "VIEW JOB");
             model.put("companyname", companyname);
             model.put("companyaddress", companyaddress);
             model.put("contactnumber", contactnumber);
             model.put("email", email);
             model.put("joblist", joblist);
+            model.put("jobreq", jobreq);
             
 
             return new ModelAndView(model, "view.ftl"); // located in src/main/resources/spark/template/freemarker
         }, new FreeMarkerEngine());
+    get("/about", (req, res) -> {
+                Map<String, Object> model = new HashMap<>();
+                
+                model.put("title", "ABOUT US");
+
+                return new ModelAndView(model, "about.ftl"); // located in src/main/resources/spark/template/freemarker
+            }, new FreeMarkerEngine());
     }
 }
